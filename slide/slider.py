@@ -9,7 +9,7 @@ app = QApplication(sys.argv)
 
 w = QWidget()
 #w.setWindowTitle("*")
-w.setFixedSize(20, 120)
+w.setFixedSize(30, 120)
 
 slider = QSlider(Qt.Vertical)
 slider.setRange(10, 120)
@@ -43,3 +43,10 @@ slider.valueChanged.connect(set_brightness)
 
 w.show()
 sys.exit(app.exec_())
+'''
+Turns out adding custom pannel applets is stupid.
+ah, cheap hack FN, add custom launcher to app location
+I increased the frame size, so now we see the X.
+launch app with custom launcher, make adjustments to brightness.
+close at liesure, xsettings will be uneffected by the close.
+'''

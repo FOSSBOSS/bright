@@ -2,11 +2,6 @@
 Brightness applet doesnt work on the desktop, fix it with "xrandr --output HDMI-1 --brightness 0.7" 
 but no slider. ... ok lets fix that
 
-Lets use this article to make the applet bit
-https://askubuntu.com/questions/750815/fuzzy-clock-for-ubuntu
-
-Then track the applet down and reuse the brigthness applet icon
-https://askubuntu.com/questions/419624/where-are-panel-applet-information-stored-in-mate/648427#648427
 
 or maybe I should just track down the source code for the brightness applet. 
 Im currious. its just a flipping slider, but Im currious about what it actualy does,
@@ -45,3 +40,11 @@ man cec-config
 man cec-client
 both are sorta junk.
 but maybe the util is usable.
+
+# Making a Mate panel applet:
+... is horrible. bad docs, dead projects, ...
+better go find that applet src...
+maybe in here some place. 
+https://github.com/mate-desktop/mate-panel
+
+
